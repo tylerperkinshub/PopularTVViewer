@@ -8,19 +8,14 @@
 import Foundation
 
 struct ResultsRoot: Codable {
-    
     var results: [PopularTV] = []
-    
     enum RootKeys: String, CodingKey {
-        case results = "results"
+        case results
     }
-    
 }
 
 struct PopularTV: Codable, Identifiable {
-    
     let id = UUID()
-    
     var showId: Int = 0
     var name: String = ""
     var posterPath: String = ""
@@ -37,7 +32,6 @@ struct PopularTV: Codable, Identifiable {
         case voteCount = "vote_count"
     }
     
-
     static let mockPopularShow = PopularTV(name: "House of the Dragon", posterPath: "/mYLOqiStMxDK3fYZFirgrMt8z5d.jpg", popularity: 4987.163, voteAverage: 7.7, voteCount: 881)
     
     static let mockPopularShows = [
@@ -54,5 +48,4 @@ struct PopularTV: Codable, Identifiable {
         PopularTV(name: "She-Hulk: Attorney at Law", posterPath: "/hJfI6AGrmr4uSHRccfJuSsapvOb.jpg", popularity: 2823.739, voteAverage: 7.1, voteCount: 846),
         PopularTV(name: "Dahmer – Monster: The Jeffrey Dahmer Story", posterPath: "/f2PVrphK0u81ES256lw3oAZuF3x.jpg", popularity: 1774.56, voteAverage: 8.3, voteCount: 402)
     ]
-    
 }

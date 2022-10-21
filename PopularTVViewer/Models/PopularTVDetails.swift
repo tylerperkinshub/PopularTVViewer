@@ -8,9 +8,7 @@
 import Foundation
 
 struct PopularTVDetails: Codable, Identifiable {
-    
     let id = UUID()
-    
     var name: String = ""
     var originalName: String = ""
     var overview: String = ""
@@ -23,7 +21,6 @@ struct PopularTVDetails: Codable, Identifiable {
     var networks: [Networks] = []
     var productionCompanies: [ProductionCompany] = []
 
-    
     struct Genre: Codable {
         var name: String = ""
     }
