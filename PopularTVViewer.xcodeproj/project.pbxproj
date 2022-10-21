@@ -10,7 +10,6 @@
 		8E0CDC7529031C12000F8D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7429031C12000F8D0A /* AppDelegate.swift */; };
 		8E0CDC7729031C12000F8D0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7629031C12000F8D0A /* SceneDelegate.swift */; };
 		8E0CDC7929031C12000F8D0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7829031C12000F8D0A /* ViewController.swift */; };
-		8E0CDC7C29031C12000F8D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7A29031C12000F8D0A /* Main.storyboard */; };
 		8E0CDC7E29031C14000F8D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7D29031C14000F8D0A /* Assets.xcassets */; };
 		8E0CDC8129031C14000F8D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7F29031C14000F8D0A /* LaunchScreen.storyboard */; };
 		8E0CDC8C29031C14000F8D0A /* PopularTVViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC8B29031C14000F8D0A /* PopularTVViewerTests.swift */; };
@@ -40,7 +39,6 @@
 		8E0CDC7429031C12000F8D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E0CDC7629031C12000F8D0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8E0CDC7829031C12000F8D0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E0CDC7B29031C12000F8D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E0CDC7D29031C14000F8D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E0CDC8029031C14000F8D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0CDC8229031C14000F8D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				8E0CDC7429031C12000F8D0A /* AppDelegate.swift */,
 				8E0CDC7629031C12000F8D0A /* SceneDelegate.swift */,
 				8E0CDC7829031C12000F8D0A /* ViewController.swift */,
-				8E0CDC7A29031C12000F8D0A /* Main.storyboard */,
 				8E0CDC7D29031C14000F8D0A /* Assets.xcassets */,
 				8E0CDC7F29031C14000F8D0A /* LaunchScreen.storyboard */,
 				8E0CDC8229031C14000F8D0A /* Info.plist */,
@@ -233,7 +230,6 @@
 			files = (
 				8E0CDC8129031C14000F8D0A /* LaunchScreen.storyboard in Resources */,
 				8E0CDC7E29031C14000F8D0A /* Assets.xcassets in Resources */,
-				8E0CDC7C29031C12000F8D0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E0CDC7A29031C12000F8D0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E0CDC7B29031C12000F8D0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8E0CDC7F29031C14000F8D0A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +430,6 @@
 				INFOPLIST_FILE = PopularTVViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +457,6 @@
 				INFOPLIST_FILE = PopularTVViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
