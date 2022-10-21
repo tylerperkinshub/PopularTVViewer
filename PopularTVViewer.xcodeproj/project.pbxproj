@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		8E0CDC7529031C12000F8D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7429031C12000F8D0A /* AppDelegate.swift */; };
 		8E0CDC7729031C12000F8D0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7629031C12000F8D0A /* SceneDelegate.swift */; };
-		8E0CDC7929031C12000F8D0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7829031C12000F8D0A /* ViewController.swift */; };
 		8E0CDC7E29031C14000F8D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7D29031C14000F8D0A /* Assets.xcassets */; };
 		8E0CDC8129031C14000F8D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7F29031C14000F8D0A /* LaunchScreen.storyboard */; };
 		8E0CDC8C29031C14000F8D0A /* PopularTVViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC8B29031C14000F8D0A /* PopularTVViewerTests.swift */; };
 		8E0CDC9629031C15000F8D0A /* PopularTVViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC9529031C15000F8D0A /* PopularTVViewerUITests.swift */; };
 		8E0CDC9829031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC9729031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift */; };
+		8E0CDCA62903480F000F8D0A /* GetPopularTVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCA52903480F000F8D0A /* GetPopularTVManager.swift */; };
+		8E0CDCA82903482C000F8D0A /* GetPopularTVDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCA72903482C000F8D0A /* GetPopularTVDetailsManager.swift */; };
+		8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCA929034881000F8D0A /* NetworkError.swift */; };
+		8E0CDCAD290348E3000F8D0A /* PopularTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCAC290348E3000F8D0A /* PopularTV.swift */; };
+		8E0CDCB2290349B1000F8D0A /* PopularTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB1290349B1000F8D0A /* PopularTVCell.swift */; };
+		8E0CDCB529034A26000F8D0A /* PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB429034A26000F8D0A /* PosterImage.swift */; };
+		8E0CDCB729034A7F000F8D0A /* GetPosterImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB629034A7F000F8D0A /* GetPosterImageManager.swift */; };
+		8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB829034A93000F8D0A /* PopularTVDetails.swift */; };
+		8E0CDCBD29034B83000F8D0A /* PopularTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCBC29034B83000F8D0A /* PopularTVViewController.swift */; };
+		8E0CDCC129034BF9000F8D0A /* PopularTVDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCC029034BF9000F8D0A /* PopularTVDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,6 @@
 		8E0CDC7129031C12000F8D0A /* PopularTVViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopularTVViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0CDC7429031C12000F8D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E0CDC7629031C12000F8D0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E0CDC7829031C12000F8D0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E0CDC7D29031C14000F8D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E0CDC8029031C14000F8D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0CDC8229031C14000F8D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		8E0CDC9129031C15000F8D0A /* PopularTVViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularTVViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0CDC9529031C15000F8D0A /* PopularTVViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewerUITests.swift; sourceTree = "<group>"; };
 		8E0CDC9729031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8E0CDCA52903480F000F8D0A /* GetPopularTVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopularTVManager.swift; sourceTree = "<group>"; };
+		8E0CDCA72903482C000F8D0A /* GetPopularTVDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPopularTVDetailsManager.swift; sourceTree = "<group>"; };
+		8E0CDCA929034881000F8D0A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8E0CDCAC290348E3000F8D0A /* PopularTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTV.swift; sourceTree = "<group>"; };
+		8E0CDCB1290349B1000F8D0A /* PopularTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVCell.swift; sourceTree = "<group>"; };
+		8E0CDCB429034A26000F8D0A /* PosterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImage.swift; sourceTree = "<group>"; };
+		8E0CDCB629034A7F000F8D0A /* GetPosterImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPosterImageManager.swift; sourceTree = "<group>"; };
+		8E0CDCB829034A93000F8D0A /* PopularTVDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetails.swift; sourceTree = "<group>"; };
+		8E0CDCBC29034B83000F8D0A /* PopularTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewController.swift; sourceTree = "<group>"; };
+		8E0CDCC029034BF9000F8D0A /* PopularTVDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +115,17 @@
 		8E0CDC7329031C12000F8D0A /* PopularTVViewer */ = {
 			isa = PBXGroup;
 			children = (
+				8E0CDCA4290347DD000F8D0A /* NetworkManagers */,
+				8E0CDCAB290348D7000F8D0A /* Models */,
+				8E0CDCBB29034AEE000F8D0A /* Protocols */,
+				8E0CDCBA29034ABF000F8D0A /* Screens */,
+				8E0CDCAF29034990000F8D0A /* Custom Views */,
 				8E0CDC7429031C12000F8D0A /* AppDelegate.swift */,
 				8E0CDC7629031C12000F8D0A /* SceneDelegate.swift */,
-				8E0CDC7829031C12000F8D0A /* ViewController.swift */,
 				8E0CDC7D29031C14000F8D0A /* Assets.xcassets */,
 				8E0CDC7F29031C14000F8D0A /* LaunchScreen.storyboard */,
 				8E0CDC8229031C14000F8D0A /* Info.plist */,
+				8E0CDCAE29034979000F8D0A /* Utilities */,
 			);
 			path = PopularTVViewer;
 			sourceTree = "<group>";
@@ -122,6 +145,90 @@
 				8E0CDC9729031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift */,
 			);
 			path = PopularTVViewerUITests;
+			sourceTree = "<group>";
+		};
+		8E0CDCA4290347DD000F8D0A /* NetworkManagers */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCA52903480F000F8D0A /* GetPopularTVManager.swift */,
+				8E0CDCA72903482C000F8D0A /* GetPopularTVDetailsManager.swift */,
+				8E0CDCB629034A7F000F8D0A /* GetPosterImageManager.swift */,
+			);
+			path = NetworkManagers;
+			sourceTree = "<group>";
+		};
+		8E0CDCAB290348D7000F8D0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCAC290348E3000F8D0A /* PopularTV.swift */,
+				8E0CDCB829034A93000F8D0A /* PopularTVDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E0CDCAE29034979000F8D0A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCA929034881000F8D0A /* NetworkError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8E0CDCAF29034990000F8D0A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCB3290349E3000F8D0A /* Images */,
+				8E0CDCB02903499C000F8D0A /* Cells */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		8E0CDCB02903499C000F8D0A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCB1290349B1000F8D0A /* PopularTVCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8E0CDCB3290349E3000F8D0A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCB429034A26000F8D0A /* PosterImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8E0CDCBA29034ABF000F8D0A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCBE29034BA4000F8D0A /* PopularTV */,
+				8E0CDCBF29034BB0000F8D0A /* PopularTVDetails */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8E0CDCBB29034AEE000F8D0A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8E0CDCBE29034BA4000F8D0A /* PopularTV */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCBC29034B83000F8D0A /* PopularTVViewController.swift */,
+			);
+			path = PopularTV;
+			sourceTree = "<group>";
+		};
+		8E0CDCBF29034BB0000F8D0A /* PopularTVDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CDCC029034BF9000F8D0A /* PopularTVDetailsViewController.swift */,
+			);
+			path = PopularTVDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0CDC7929031C12000F8D0A /* ViewController.swift in Sources */,
+				8E0CDCAD290348E3000F8D0A /* PopularTV.swift in Sources */,
+				8E0CDCB729034A7F000F8D0A /* GetPosterImageManager.swift in Sources */,
+				8E0CDCA62903480F000F8D0A /* GetPopularTVManager.swift in Sources */,
+				8E0CDCA82903482C000F8D0A /* GetPopularTVDetailsManager.swift in Sources */,
+				8E0CDCBD29034B83000F8D0A /* PopularTVViewController.swift in Sources */,
+				8E0CDCC129034BF9000F8D0A /* PopularTVDetailsViewController.swift in Sources */,
+				8E0CDCB2290349B1000F8D0A /* PopularTVCell.swift in Sources */,
+				8E0CDCB529034A26000F8D0A /* PosterImage.swift in Sources */,
+				8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */,
 				8E0CDC7529031C12000F8D0A /* AppDelegate.swift in Sources */,
 				8E0CDC7729031C12000F8D0A /* SceneDelegate.swift in Sources */,
+				8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
