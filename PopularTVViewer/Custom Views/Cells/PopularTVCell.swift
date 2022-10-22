@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PopularShowCell: View {
+struct PopularTVCell: View {
     
     let popularTV: PopularTV
     
@@ -49,14 +49,14 @@ struct PopularShowCell: View {
             .frame(width: 101, height: 200)
             .background(Color("USWhite"))
             .cornerRadius(8)
-            .shadow(color: Color("USShadow"), radius: 15, x: 10, y: 10)
+            .shadow(color: Color("USShadow"), radius: 10, x: 5, y: 5)
         }
     }
 }
 
 struct PopularShowView_Previews: PreviewProvider {
     static var previews: some View {
-        PopularShowCell(popularTV: PopularTV.mockPopularShow)
+        PopularTVCell(popularTV: PopularTV.mockPopularShow)
             .preferredColorScheme(.dark)
     }
 }

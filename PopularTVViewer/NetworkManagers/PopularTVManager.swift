@@ -8,8 +8,6 @@
 import Foundation
 
 class PopularTVManager {
-    static let shared = PopularTVManager()
-
     
     func getPopularShows(page: Int, completion: @escaping (Result<[PopularTV], NetworkError>) -> Void) {
         

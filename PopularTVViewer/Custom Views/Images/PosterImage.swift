@@ -12,7 +12,13 @@ final class PosterImage: ObservableObject {
     @Published var posterImage: Image? = nil
     
     func load(fromURLString urlString: String) {
-        #warning("Need to call network here")
+        PosterImageManager.shared.downloadImage(fromURLString: urlString) { poster in
+            guard let poster = poster else { return }
+            
+            DispatchQueue.main.async {
+                self.posterImage = Image(uiImage: poster)
+            }
+        }
     }
     
 }

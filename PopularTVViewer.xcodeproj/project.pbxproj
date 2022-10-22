@@ -24,6 +24,16 @@
 		8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB829034A93000F8D0A /* PopularTVDetails.swift */; };
 		8E0CDCBD29034B83000F8D0A /* PopularTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCBC29034B83000F8D0A /* PopularTVViewController.swift */; };
 		8E0CDCC129034BF9000F8D0A /* PopularTVDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCC029034BF9000F8D0A /* PopularTVDetailsViewController.swift */; };
+		8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F2D2903992C00B90686 /* PTNameCell.swift */; };
+		8E400F3029045BAD00B90686 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F2F29045BAD00B90686 /* Coordinator.swift */; };
+		8E400F3229045C0200B90686 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */; };
+		8E400F3429045CBE00B90686 /* PopularTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3329045CBE00B90686 /* PopularTVView.swift */; };
+		8E400F3629045DFC00B90686 /* PopularTVDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */; };
+		8E400F3A29045E7100B90686 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */; };
+		8E400F3C29045EC700B90686 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3B29045EC700B90686 /* OnboardingView.swift */; };
+		8E400F3E2904876000B90686 /* PopularTVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3D2904876000B90686 /* PopularTVViewModel.swift */; };
+		8E400F4029048D8C00B90686 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3F29048D8C00B90686 /* EmptyCell.swift */; };
+		8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +75,16 @@
 		8E0CDCB829034A93000F8D0A /* PopularTVDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetails.swift; sourceTree = "<group>"; };
 		8E0CDCBC29034B83000F8D0A /* PopularTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewController.swift; sourceTree = "<group>"; };
 		8E0CDCC029034BF9000F8D0A /* PopularTVDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsViewController.swift; sourceTree = "<group>"; };
+		8E400F2D2903992C00B90686 /* PTNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTNameCell.swift; sourceTree = "<group>"; };
+		8E400F2F29045BAD00B90686 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		8E400F3329045CBE00B90686 /* PopularTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVView.swift; sourceTree = "<group>"; };
+		8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsView.swift; sourceTree = "<group>"; };
+		8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		8E400F3B29045EC700B90686 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8E400F3D2904876000B90686 /* PopularTVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewModel.swift; sourceTree = "<group>"; };
+		8E400F3F29048D8C00B90686 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +199,7 @@
 			children = (
 				8E0CDCB3290349E3000F8D0A /* Images */,
 				8E0CDCB02903499C000F8D0A /* Cells */,
+				8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -187,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				8E0CDCB1290349B1000F8D0A /* PopularTVCell.swift */,
+				8E400F2D2903992C00B90686 /* PTNameCell.swift */,
+				8E400F3F29048D8C00B90686 /* EmptyCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -202,6 +225,8 @@
 		8E0CDCBA29034ABF000F8D0A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8E400F3829045E5300B90686 /* Coordinators */,
+				8E400F3729045E2E00B90686 /* Onboarding */,
 				8E0CDCBE29034BA4000F8D0A /* PopularTV */,
 				8E0CDCBF29034BB0000F8D0A /* PopularTVDetails */,
 			);
@@ -211,6 +236,7 @@
 		8E0CDCBB29034AEE000F8D0A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				8E400F2F29045BAD00B90686 /* Coordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -219,6 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				8E0CDCBC29034B83000F8D0A /* PopularTVViewController.swift */,
+				8E400F3329045CBE00B90686 /* PopularTVView.swift */,
+				8E400F3D2904876000B90686 /* PopularTVViewModel.swift */,
 			);
 			path = PopularTV;
 			sourceTree = "<group>";
@@ -227,8 +255,26 @@
 			isa = PBXGroup;
 			children = (
 				8E0CDCC029034BF9000F8D0A /* PopularTVDetailsViewController.swift */,
+				8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */,
 			);
 			path = PopularTVDetails;
+			sourceTree = "<group>";
+		};
+		8E400F3729045E2E00B90686 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8E400F3B29045EC700B90686 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8E400F3829045E5300B90686 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */,
+				8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,18 +407,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E400F3E2904876000B90686 /* PopularTVViewModel.swift in Sources */,
 				8E0CDCAD290348E3000F8D0A /* PopularTV.swift in Sources */,
 				8E0CDCB729034A7F000F8D0A /* PosterImageManager.swift in Sources */,
+				8E400F3029045BAD00B90686 /* Coordinator.swift in Sources */,
 				8E0CDCA62903480F000F8D0A /* PopularTVManager.swift in Sources */,
 				8E0CDCA82903482C000F8D0A /* PopularTVDetailsManager.swift in Sources */,
+				8E400F3629045DFC00B90686 /* PopularTVDetailsView.swift in Sources */,
 				8E0CDCBD29034B83000F8D0A /* PopularTVViewController.swift in Sources */,
 				8E0CDCC129034BF9000F8D0A /* PopularTVDetailsViewController.swift in Sources */,
 				8E0CDCB2290349B1000F8D0A /* PopularTVCell.swift in Sources */,
 				8E0CDCB529034A26000F8D0A /* PosterImage.swift in Sources */,
+				8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */,
 				8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */,
+				8E400F3A29045E7100B90686 /* OnboardingCoordinator.swift in Sources */,
+				8E400F3C29045EC700B90686 /* OnboardingView.swift in Sources */,
+				8E400F3429045CBE00B90686 /* PopularTVView.swift in Sources */,
 				8E0CDC7529031C12000F8D0A /* AppDelegate.swift in Sources */,
+				8E400F4029048D8C00B90686 /* EmptyCell.swift in Sources */,
 				8E0CDC7729031C12000F8D0A /* SceneDelegate.swift in Sources */,
+				8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */,
 				8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */,
+				8E400F3229045C0200B90686 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +604,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,7 +614,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -575,6 +632,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +642,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
