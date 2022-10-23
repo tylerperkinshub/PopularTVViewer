@@ -8,13 +8,42 @@
 import SwiftUI
 
 struct PopularTVDetailsView: View {
+    
+    let tvDetail: PopularTVDetails
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Spacer()
+                VStack(alignment: .leading, spacing: 4) {
+            
+                    Text(tvDetail.name)
+                    if tvDetail.name != tvDetail.originalName {
+                        Text(tvDetail.originalName)
+
+                    }
+                    Text(tvDetail.tagline)
+                    Text(tvDetail.status)
+                }
+                Spacer()
+                
+                Image(uiImage: UIImage(named: tvDetail.poster)!)
+                Spacer()
+
+
+            }
+
+            Text(tvDetail.overview)
+                .padding()
+
+            PTSegmentedView(tvDetails: tvDetail)
+        }
+        
     }
 }
 
 struct PopularTVDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        PopularTVDetailsView()
+        PopularTVDetailsView(tvDetail: PopularTVDetails.mockPopularTVDetails)
     }
 }

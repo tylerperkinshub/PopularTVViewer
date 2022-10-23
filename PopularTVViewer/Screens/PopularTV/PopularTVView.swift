@@ -22,6 +22,7 @@ struct PopularTVView: View {
                     
                     EmptyCell()
                         .onAppear {
+                            #warning("This feels buggy as hell.")
                             viewModel.getMoreShows()
                         }
                 }

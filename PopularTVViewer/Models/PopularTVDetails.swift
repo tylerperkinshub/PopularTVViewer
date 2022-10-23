@@ -8,6 +8,7 @@
 import Foundation
 
 struct PopularTVDetails: Codable, Identifiable {
+    
     let id = UUID()
     var name: String = ""
     var originalName: String = ""
@@ -21,15 +22,18 @@ struct PopularTVDetails: Codable, Identifiable {
     var networks: [Networks] = []
     var productionCompanies: [ProductionCompany] = []
 
-    struct Genre: Codable {
+    struct Genre: Codable, Identifiable {
+        let id = UUID()
         var name: String = ""
     }
     
-    struct Networks: Codable {
+    struct Networks: Codable, Identifiable {
+        let id = UUID()
         var name: String = ""
     }
     
-    struct ProductionCompany: Codable {
+    struct ProductionCompany: Codable, Identifiable {
+        let id = UUID()
         var name: String = ""
     }
     
@@ -44,7 +48,7 @@ struct PopularTVDetails: Codable, Identifiable {
     static let mockPopularTVDetails = PopularTVDetails(name: "House of the Dragon",
                                                        originalName: "House of the Dragon",
                                                        overview: "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-                                                       poster: "/z2yahl2uefxDCl0nogcRBstwruJ.jpg",
+                                                       poster: "rop.jpg",
                                                        backdrop: "/Aa9TLpNpBMyRkD8sPJ7ACKLjt0l.jpg",
                                                        status: "Returning Series",
                                                        tagline: "Fire and blood.",
