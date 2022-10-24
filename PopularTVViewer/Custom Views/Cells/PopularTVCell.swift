@@ -43,6 +43,7 @@ struct PopularTVCell: View {
                     .frame(width: 93, alignment: .leading)
                     .lineLimit(1)
                     .font(.system(size: 16))
+                    .foregroundColor(Color("USBlack"))
                     .minimumScaleFactor(0.70)
                     .padding([.leading, .trailing, .bottom], 0)
             }

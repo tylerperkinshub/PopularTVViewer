@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PTBodyLabel: View {
-    @State var bodyLabel: String = ""
+    let bodyLabel: String
     
     var body: some View {
         HStack {

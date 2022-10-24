@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PTTitleLabel: View {
     
-    @State var titleLabel: String = ""
+    let titleLabel: String
     
     var body: some View {
         Text(titleLabel)

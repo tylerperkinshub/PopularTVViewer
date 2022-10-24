@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PTSubtitleLabel: View {
-        @State var subtitleLabel: String = ""
+        let subtitleLabel: String
         
         var body: some View {
             Text(subtitleLabel)

@@ -10,7 +10,7 @@ import SwiftUI
 struct PopularTVView: View {
     @StateObject var viewModel = PopularTVViewModel()
     
-    let popularShow: PopularTV!
+    let popularShow: PopularTV
     
     var body: some View {
         NavigationView {
@@ -33,6 +33,10 @@ struct PopularTVView: View {
         }
         .onAppear {
             viewModel.getShows()
+        }
+        
+        if viewModel.isLoading {
+            LoadingView()
         }
     }
 }
