@@ -25,6 +25,7 @@
 		8E0CDCBD29034B83000F8D0A /* PopularTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCBC29034B83000F8D0A /* PopularTVViewController.swift */; };
 		8E0CDCC129034BF9000F8D0A /* PopularTVDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCC029034BF9000F8D0A /* PopularTVDetailsViewController.swift */; };
 		8E3C668929061F0300DA034B /* PTActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C668829061F0300DA034B /* PTActivityIndicator.swift */; };
+		8E3C668C290621A400DA034B /* PopularTVDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */; };
 		8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F2D2903992C00B90686 /* PTNameCell.swift */; };
 		8E400F3029045BAD00B90686 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F2F29045BAD00B90686 /* Coordinator.swift */; };
 		8E400F3229045C0200B90686 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */; };
@@ -81,6 +82,7 @@
 		8E0CDCBC29034B83000F8D0A /* PopularTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewController.swift; sourceTree = "<group>"; };
 		8E0CDCC029034BF9000F8D0A /* PopularTVDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsViewController.swift; sourceTree = "<group>"; };
 		8E3C668829061F0300DA034B /* PTActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTActivityIndicator.swift; sourceTree = "<group>"; };
+		8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsCoordinator.swift; sourceTree = "<group>"; };
 		8E400F2D2903992C00B90686 /* PTNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTNameCell.swift; sourceTree = "<group>"; };
 		8E400F2F29045BAD00B90686 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			children = (
 				8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */,
 				8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */,
+				8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				8E0CDC7729031C12000F8D0A /* SceneDelegate.swift in Sources */,
 				8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */,
 				8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */,
+				8E3C668C290621A400DA034B /* PopularTVDetailsCoordinator.swift in Sources */,
 				8E400F4A2904EE7C00B90686 /* PTBodyLabel.swift in Sources */,
 				8E400F3229045C0200B90686 /* ApplicationCoordinator.swift in Sources */,
 			);

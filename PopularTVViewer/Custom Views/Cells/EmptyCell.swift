@@ -10,7 +10,6 @@ import SwiftUI
 struct EmptyCell: View {
     var body: some View {
         VStack {
-
             EmptyView()
         }
         .frame(width: 101, height: 200)
