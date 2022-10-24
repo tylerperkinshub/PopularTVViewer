@@ -11,7 +11,7 @@ import UIKit
 
 class PosterImageManager {
     
-    static let shared = PosterImageManager()
+    static var shared = PosterImageManager()
     private let cache = NSCache<NSString, UIImage>()
 
     func downloadImage(fromURLString urlString: String, complete: @escaping (UIImage?) -> Void) {

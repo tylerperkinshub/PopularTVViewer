@@ -19,6 +19,7 @@ struct PopularTVView: View {
                     ForEach(viewModel.popularTV) { show in
                         NavigationLink(destination: PopularTVDetailsView(showId: show.showId)) {
                             PopularTVCell(popularTV: show)
+                                .accessibilityLabel("\(show.name) average rating \(show.voteAverage)")
                         }
                     }
                     
@@ -33,10 +34,6 @@ struct PopularTVView: View {
         }
         .onAppear {
             viewModel.getShows()
-        }
-        
-        if viewModel.isLoading {
-            LoadingView()
         }
     }
 }

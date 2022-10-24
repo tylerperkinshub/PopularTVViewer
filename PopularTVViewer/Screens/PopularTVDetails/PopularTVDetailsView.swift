@@ -19,16 +19,11 @@ struct PopularTVDetailsView: View {
         VStack {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-
-
-                    PTTitleLabel(titleLabel: viewModel.tvDetail.name)
-                    
+                    PTTitleLabel(titleLabel: viewModel.tvDetail.name, fontSize: 24)
                     if viewModel.tvDetail.name != viewModel.tvDetail.originalName {
 
                          PTSubtitleLabel(subtitleLabel: "aka \(viewModel.tvDetail.originalName)")
                     }
-                    
-
                     PTSubtitleLabel(subtitleLabel: viewModel.tvDetail.tagline)
                     
                     Spacer()
@@ -44,13 +39,9 @@ struct PopularTVDetailsView: View {
                     .cornerRadius(8)
                     .padding([.top], -4)
             }
-            .padding([.top], 24)
             .padding([.leading, .trailing], 24)
             
-
            PTBodyLabel(bodyLabel: viewModel.tvDetail.overview)
-            
-            
             
             PTSegmentedView(tvDetails: viewModel.tvDetail)
         }
@@ -61,13 +52,13 @@ struct PopularTVDetailsView: View {
     
 }
 
-//struct PopularTVDetailsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView {
-//            PopularTVDetailsView(tvDetail: PopularTVDetails, showId: 0)
-//        }
-//    }
-//}
+struct PopularTVDetailsView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            PopularTVDetailsView(showId: 0)
+        }
+    }
+}
 
 
 
