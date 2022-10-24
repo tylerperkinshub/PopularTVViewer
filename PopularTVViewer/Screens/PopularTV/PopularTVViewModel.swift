@@ -29,13 +29,13 @@ final class PopularTVViewModel: ObservableObject {
     
     func getShows() {
 
-        manager.getPopularShows(page: page) { result in
+        manager.getPopularShows(page: page) { [weak self] result in
             DispatchQueue.main.async {
             
                             switch result {
                             case .success(let popularTV):
                                 for show in popularTV {
-                                    self.popularTV.append(show)
+                                    self?.popularTV.append(show)
                                 }
             
                             case .failure(let error):
@@ -55,31 +55,7 @@ final class PopularTVViewModel: ObservableObject {
         page += 1 
         }
     }
-    
 
-        
-//        getPopularShows(page: page) { result in
-//            DispatchQueue.main.async {
-//
-//                switch result {
-//                case .success(let popularTV):
-//                    self.popularTV = popularTV.map { $0 }
-//
-//                case .failure(let error):
-//                    switch error {
-//                    case .invalidURL:
-//                        print("Invalid URL")
-//                    case .invalidData:
-//                        print("Invalid Data")
-//                    case .unableToComplete:
-//                        print("Unable to complete")
-//                    case .invalidResponse:
-//                        print("Invalid response")
-//                    }
-//                }
-//            }
-//        }
-//    }
     
 
 

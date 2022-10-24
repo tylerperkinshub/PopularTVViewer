@@ -15,6 +15,7 @@ struct PTSegmentedView: View {
     
     
     var body: some View {
+
         VStack {
             Picker("What is your favorite color?", selection: $selection) {
                 Text("Networks").tag(0)
@@ -24,29 +25,34 @@ struct PTSegmentedView: View {
             .pickerStyle(.segmented)
             .padding([.leading, .trailing], 24)
             
+            
+            #warning("the lists need to extracted out")
             if selection == 0 {
                 List {
                     ForEach(tvDetails.networks) { network in
                         Text(network.name)
                     }
                 }
-                .padding(0)
+                .listStyle(.plain)
+                .padding([.leading, .trailing], 24)
             } else if selection == 1 {
                 List {
                     ForEach(tvDetails.productionCompanies) { company in
                         Text(company.name)
                     }
                 }
-                .padding(0)
+                .listStyle(.plain)
+                .padding([.leading, .trailing], 24)
             } else {
                 List {
                     ForEach(tvDetails.genres) { genre in
                         Text(genre.name)
                     }
                 }
-                .padding(0)
+                .listStyle(.plain)
+                .padding([.leading, .trailing], 24)
             }
-                
+        
             
         }
     }
@@ -57,3 +63,5 @@ struct PTSegmentedView_Previews: PreviewProvider {
         PTSegmentedView(tvDetails: PopularTVDetails.mockPopularTVDetails)
     }
 }
+
+

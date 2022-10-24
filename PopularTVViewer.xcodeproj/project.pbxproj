@@ -34,6 +34,9 @@
 		8E400F3E2904876000B90686 /* PopularTVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3D2904876000B90686 /* PopularTVViewModel.swift */; };
 		8E400F4029048D8C00B90686 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3F29048D8C00B90686 /* EmptyCell.swift */; };
 		8E400F422904BDA200B90686 /* PopularTVDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F412904BDA200B90686 /* PopularTVDetailsViewModel.swift */; };
+		8E400F462904ECAB00B90686 /* PTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F452904ECAB00B90686 /* PTTitleLabel.swift */; };
+		8E400F482904ECC700B90686 /* PTSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F472904ECC700B90686 /* PTSubtitleLabel.swift */; };
+		8E400F4A2904EE7C00B90686 /* PTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F492904EE7C00B90686 /* PTBodyLabel.swift */; };
 		8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +89,9 @@
 		8E400F3D2904876000B90686 /* PopularTVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewModel.swift; sourceTree = "<group>"; };
 		8E400F3F29048D8C00B90686 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		8E400F412904BDA200B90686 /* PopularTVDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsViewModel.swift; sourceTree = "<group>"; };
+		8E400F452904ECAB00B90686 /* PTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTitleLabel.swift; sourceTree = "<group>"; };
+		8E400F472904ECC700B90686 /* PTSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSubtitleLabel.swift; sourceTree = "<group>"; };
+		8E400F492904EE7C00B90686 /* PTBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTBodyLabel.swift; sourceTree = "<group>"; };
 		8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -284,6 +290,9 @@
 		8E400F432904D2EA00B90686 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
+				8E400F452904ECAB00B90686 /* PTTitleLabel.swift */,
+				8E400F472904ECC700B90686 /* PTSubtitleLabel.swift */,
+				8E400F492904EE7C00B90686 /* PTBodyLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -437,6 +446,8 @@
 				8E0CDCC129034BF9000F8D0A /* PopularTVDetailsViewController.swift in Sources */,
 				8E0CDCB2290349B1000F8D0A /* PopularTVCell.swift in Sources */,
 				8E0CDCB529034A26000F8D0A /* PosterImage.swift in Sources */,
+				8E400F462904ECAB00B90686 /* PTTitleLabel.swift in Sources */,
+				8E400F482904ECC700B90686 /* PTSubtitleLabel.swift in Sources */,
 				8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */,
 				8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */,
 				8E400F3A29045E7100B90686 /* OnboardingCoordinator.swift in Sources */,
@@ -448,6 +459,7 @@
 				8E0CDC7729031C12000F8D0A /* SceneDelegate.swift in Sources */,
 				8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */,
 				8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */,
+				8E400F4A2904EE7C00B90686 /* PTBodyLabel.swift in Sources */,
 				8E400F3229045C0200B90686 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

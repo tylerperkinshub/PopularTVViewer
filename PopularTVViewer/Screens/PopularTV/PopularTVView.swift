@@ -17,12 +17,14 @@ struct PopularTVView: View {
             ScrollView {
                 LazyVGrid(columns: viewModel.columns) {
                     ForEach(viewModel.popularTV) { show in
-                        PopularTVCell(popularTV: show)
+                        NavigationLink(destination: PopularTVDetailsView(showId: show.showId)) {
+                            PopularTVCell(popularTV: show)
+                        }
                     }
                     
                     EmptyCell()
                         .onAppear {
-                            #warning("This feels buggy as hell.")
+#warning("This feels buggy as hell.")
                             viewModel.getMoreShows()
                         }
                 }
