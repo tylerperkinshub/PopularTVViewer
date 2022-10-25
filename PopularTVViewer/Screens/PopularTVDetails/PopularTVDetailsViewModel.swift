@@ -9,16 +9,18 @@ import Foundation
 
 
 final class PopularTVDetailsViewModel: ObservableObject {
-    #warning("Update for control")
     @Published private(set) var tvDetail = PopularTVDetails()
     let manager: PopularTVDetailsManagerProtocol
     
+    // Injecting for testing.
+
     init(manager: PopularTVDetailsManagerProtocol = PopularTVDetailsManager(), userID: Int) {
         self.manager = manager
     }
     
-    func getDetails(userId: Int) {
-        manager.getPopularShowDetails(showId: userId) { [weak self] result in
+    // On appear getting showId information.
+    func getDetails(showId: Int) {
+        manager.getPopularShowDetails(showId: showId) { [weak self] result in
             DispatchQueue.main.async {
                 
                 switch result {

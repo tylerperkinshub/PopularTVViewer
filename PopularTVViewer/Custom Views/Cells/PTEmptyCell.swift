@@ -7,17 +7,11 @@
 
 import SwiftUI
 
-struct EmptyCell: View {
+struct PTEmptyCell: View {
     var body: some View {
         VStack {
             EmptyView()
         }
         .frame(width: 101, height: 200)
-    }
-}
-
-struct EmptyCell_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyCell()
     }
 }

@@ -16,18 +16,17 @@
 		8E0CDCA82903482C000F8D0A /* PopularTVDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCA72903482C000F8D0A /* PopularTVDetailsManager.swift */; };
 		8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCA929034881000F8D0A /* NetworkError.swift */; };
 		8E0CDCAD290348E3000F8D0A /* PopularTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCAC290348E3000F8D0A /* PopularTV.swift */; };
-		8E0CDCB2290349B1000F8D0A /* PopularTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB1290349B1000F8D0A /* PopularTVCell.swift */; };
-		8E0CDCB529034A26000F8D0A /* PosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB429034A26000F8D0A /* PosterImage.swift */; };
+		8E0CDCB2290349B1000F8D0A /* PTPopularTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB1290349B1000F8D0A /* PTPopularTVCell.swift */; };
+		8E0CDCB529034A26000F8D0A /* PTPosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB429034A26000F8D0A /* PTPosterImage.swift */; };
 		8E0CDCB729034A7F000F8D0A /* PosterImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB629034A7F000F8D0A /* PosterImageManager.swift */; };
 		8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCB829034A93000F8D0A /* PopularTVDetails.swift */; };
 		8E3C668C290621A400DA034B /* PopularTVDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */; };
-		8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F2D2903992C00B90686 /* PTNameCell.swift */; };
 		8E400F3029045BAD00B90686 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F2F29045BAD00B90686 /* Coordinator.swift */; };
 		8E400F3229045C0200B90686 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3129045C0200B90686 /* MainCoordinator.swift */; };
 		8E400F3429045CBE00B90686 /* PopularTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3329045CBE00B90686 /* PopularTVView.swift */; };
 		8E400F3629045DFC00B90686 /* PopularTVDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */; };
 		8E400F3E2904876000B90686 /* PopularTVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3D2904876000B90686 /* PopularTVViewModel.swift */; };
-		8E400F4029048D8C00B90686 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3F29048D8C00B90686 /* EmptyCell.swift */; };
+		8E400F4029048D8C00B90686 /* PTEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3F29048D8C00B90686 /* PTEmptyCell.swift */; };
 		8E400F422904BDA200B90686 /* PopularTVDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F412904BDA200B90686 /* PopularTVDetailsViewModel.swift */; };
 		8E400F462904ECAB00B90686 /* PTTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F452904ECAB00B90686 /* PTTitleLabel.swift */; };
 		8E400F482904ECC700B90686 /* PTSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F472904ECC700B90686 /* PTSubtitleLabel.swift */; };
@@ -37,6 +36,7 @@
 		8EB3184C29084DBA00D80BBD /* MockedPopularTVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */; };
 		8EB3184E29084EE300D80BBD /* MockedPopularTVDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */; };
 		8EB318512908555300D80BBD /* ColumnLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318502908555300D80BBD /* ColumnLayoutHelper.swift */; };
+		8EB318532908656400D80BBD /* PTAverageRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318522908656400D80BBD /* PTAverageRatingView.swift */; };
 		8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,18 +63,17 @@
 		8E0CDCA72903482C000F8D0A /* PopularTVDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsManager.swift; sourceTree = "<group>"; };
 		8E0CDCA929034881000F8D0A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		8E0CDCAC290348E3000F8D0A /* PopularTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTV.swift; sourceTree = "<group>"; };
-		8E0CDCB1290349B1000F8D0A /* PopularTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVCell.swift; sourceTree = "<group>"; };
-		8E0CDCB429034A26000F8D0A /* PosterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImage.swift; sourceTree = "<group>"; };
+		8E0CDCB1290349B1000F8D0A /* PTPopularTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTPopularTVCell.swift; sourceTree = "<group>"; };
+		8E0CDCB429034A26000F8D0A /* PTPosterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTPosterImage.swift; sourceTree = "<group>"; };
 		8E0CDCB629034A7F000F8D0A /* PosterImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageManager.swift; sourceTree = "<group>"; };
 		8E0CDCB829034A93000F8D0A /* PopularTVDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetails.swift; sourceTree = "<group>"; };
 		8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsCoordinator.swift; sourceTree = "<group>"; };
-		8E400F2D2903992C00B90686 /* PTNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTNameCell.swift; sourceTree = "<group>"; };
 		8E400F2F29045BAD00B90686 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8E400F3129045C0200B90686 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8E400F3329045CBE00B90686 /* PopularTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVView.swift; sourceTree = "<group>"; };
 		8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsView.swift; sourceTree = "<group>"; };
 		8E400F3D2904876000B90686 /* PopularTVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewModel.swift; sourceTree = "<group>"; };
-		8E400F3F29048D8C00B90686 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		8E400F3F29048D8C00B90686 /* PTEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTEmptyCell.swift; sourceTree = "<group>"; };
 		8E400F412904BDA200B90686 /* PopularTVDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsViewModel.swift; sourceTree = "<group>"; };
 		8E400F452904ECAB00B90686 /* PTTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTitleLabel.swift; sourceTree = "<group>"; };
 		8E400F472904ECC700B90686 /* PTSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSubtitleLabel.swift; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPopularTVManager.swift; sourceTree = "<group>"; };
 		8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPopularTVDetailsManager.swift; sourceTree = "<group>"; };
 		8EB318502908555300D80BBD /* ColumnLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnLayoutHelper.swift; sourceTree = "<group>"; };
+		8EB318522908656400D80BBD /* PTAverageRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTAverageRatingView.swift; sourceTree = "<group>"; };
 		8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,9 +192,9 @@
 		8E0CDCB02903499C000F8D0A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				8E0CDCB1290349B1000F8D0A /* PopularTVCell.swift */,
-				8E400F2D2903992C00B90686 /* PTNameCell.swift */,
-				8E400F3F29048D8C00B90686 /* EmptyCell.swift */,
+				8E0CDCB1290349B1000F8D0A /* PTPopularTVCell.swift */,
+				8EB318522908656400D80BBD /* PTAverageRatingView.swift */,
+				8E400F3F29048D8C00B90686 /* PTEmptyCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 		8E0CDCB3290349E3000F8D0A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8E0CDCB429034A26000F8D0A /* PosterImage.swift */,
+				8E0CDCB429034A26000F8D0A /* PTPosterImage.swift */,
 				8EB318462907591400D80BBD /* PTAsyncImage.swift */,
 			);
 			path = Images;
@@ -390,18 +390,18 @@
 				8E0CDCA82903482C000F8D0A /* PopularTVDetailsManager.swift in Sources */,
 				8EB318512908555300D80BBD /* ColumnLayoutHelper.swift in Sources */,
 				8E400F3629045DFC00B90686 /* PopularTVDetailsView.swift in Sources */,
-				8E0CDCB2290349B1000F8D0A /* PopularTVCell.swift in Sources */,
-				8E0CDCB529034A26000F8D0A /* PosterImage.swift in Sources */,
+				8E0CDCB2290349B1000F8D0A /* PTPopularTVCell.swift in Sources */,
+				8E0CDCB529034A26000F8D0A /* PTPosterImage.swift in Sources */,
+				8EB318532908656400D80BBD /* PTAverageRatingView.swift in Sources */,
 				8EB3184C29084DBA00D80BBD /* MockedPopularTVManager.swift in Sources */,
 				8E400F462904ECAB00B90686 /* PTTitleLabel.swift in Sources */,
 				8E400F482904ECC700B90686 /* PTSubtitleLabel.swift in Sources */,
-				8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */,
 				8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */,
 				8EB3184E29084EE300D80BBD /* MockedPopularTVDetailsManager.swift in Sources */,
 				8E400F422904BDA200B90686 /* PopularTVDetailsViewModel.swift in Sources */,
 				8E400F3429045CBE00B90686 /* PopularTVView.swift in Sources */,
 				8E0CDC7529031C12000F8D0A /* AppDelegate.swift in Sources */,
-				8E400F4029048D8C00B90686 /* EmptyCell.swift in Sources */,
+				8E400F4029048D8C00B90686 /* PTEmptyCell.swift in Sources */,
 				8E0CDC7729031C12000F8D0A /* SceneDelegate.swift in Sources */,
 				8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */,
 				8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */,

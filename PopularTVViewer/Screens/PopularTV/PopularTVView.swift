@@ -17,12 +17,14 @@ struct PopularTVView: View {
             ScrollView {
                 LazyVGrid(columns: viewModel.columns) {
                     ForEach(viewModel.popularTV) { show in
+                        // On selection get TVDetails for the showId.
                         NavigationLink(destination: PopularTVDetailsView(showId: show.showId)) {
-                            PopularTVCell(popularTV: show)
+                            PTPopularTVCell(popularTV: show)
                                 .accessibilityLabel("\(show.name) average rating \(show.voteAverage)")
                         }
                     }
-                    EmptyCell()
+                    // Spying for next network call.
+                    PTEmptyCell()
                         .onAppear {
                             viewModel.getMoreShows()
                         }

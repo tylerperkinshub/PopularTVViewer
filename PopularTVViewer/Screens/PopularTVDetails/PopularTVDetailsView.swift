@@ -13,7 +13,7 @@ struct PopularTVDetailsView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(alignment: .top) {
                 VStack(alignment: .leading) {
                     PTTitleLabel(label: viewModel.tvDetail.name, fontSize: 18)
                     if viewModel.tvDetail.name != viewModel.tvDetail.originalName {
@@ -31,10 +31,11 @@ struct PopularTVDetailsView: View {
             
             PTBodyLabel(label: viewModel.tvDetail.overview)
                 .minimumScaleFactor(0.85)
+            // Showing different arrays dependent on selection. 
             PTSegmentedView(tvDetails: viewModel.tvDetail)
         }
         .onAppear {
-            viewModel.getDetails(userId: showId)
+            viewModel.getDetails(showId: showId)
         }
     }
 }
@@ -42,7 +43,7 @@ struct PopularTVDetailsView: View {
 struct PopularTVDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            PopularTVDetailsView(showId: 0)
+            PopularTVDetailsView(showId: PopularTV.mockPopularShow.showId)
         }
     }
 }

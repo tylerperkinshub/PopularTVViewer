@@ -8,8 +8,8 @@
 import UIKit
 import SwiftUI
 
+// Setup for testing initial launch.
 final class MainCoordinator: Coordinator {
-    
     let window: UIWindow
     
     init(window: UIWindow) {

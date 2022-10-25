@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Reusable title label
 struct PTTitleLabel: View {
     let label: String
     let fontSize: CGFloat

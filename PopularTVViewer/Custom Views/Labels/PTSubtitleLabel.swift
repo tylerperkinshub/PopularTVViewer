@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Reusable subtitle label 
 struct PTSubtitleLabel: View {
         let label: String
         

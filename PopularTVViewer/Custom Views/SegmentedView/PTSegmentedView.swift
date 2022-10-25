@@ -9,12 +9,14 @@ import SwiftUI
 
 struct PTSegmentedView: View {
     let tvDetails: PopularTVDetails
+    let fontSize: CGFloat = 16
     @State private var selection = 0
     
     var body: some View {
 
         VStack {
-            Picker("What is your favorite color?", selection: $selection) {
+            // Segmented picker with 3 selections
+            Picker("", selection: $selection) {
                 Text("Networks").tag(0)
                 Text("Produced by").tag(1)
                 Text("Genres").tag(2)
@@ -22,19 +24,18 @@ struct PTSegmentedView: View {
             .pickerStyle(.segmented)
             .padding([.leading, .trailing], 24)
             
-            #warning("the lists need to extracted out")
+            // Displaying list dependent on $selection.tag()
             if selection == 0 {
                 List {
                     ForEach(tvDetails.networks) { network in
-                        Text(network.name)
+                        PTTitleLabel(label: network.name, fontSize: fontSize)
                     }
                 }
                 .listStyle(.plain)
-                .padding([.leading, .trailing], 24)
-            } else if selection == 1 {
+                .padding([.leading, .trailing], 24)            } else if selection == 1 {
                 List {
                     ForEach(tvDetails.productionCompanies) { company in
-                        Text(company.name)
+                        PTTitleLabel(label: company.name, fontSize: fontSize)
                     }
                 }
                 .listStyle(.plain)
@@ -42,7 +43,7 @@ struct PTSegmentedView: View {
             } else {
                 List {
                     ForEach(tvDetails.genres) { genre in
-                        Text(genre.name)
+                        PTTitleLabel(label: genre.name, fontSize: fontSize)
                     }
                 }
                 .listStyle(.plain)
