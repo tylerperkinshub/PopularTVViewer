@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PopularTVDetailsManager: PopularTVDetailsManagerProtocol {
+final class PopularTVDetailsManager: PopularTVDetailsManagerProtocol {
     
     func getPopularShowDetails(showId: Int, completion: @escaping (Result<PopularTVDetails, NetworkError>) -> Void) {
         let popularShowsURL = "https://api.themoviedb.org/3/tv/\(showId)?api_key=f691c008b316b96c5f83eae55b299bcb&language=en-US"

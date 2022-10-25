@@ -24,7 +24,6 @@ final class PopularTVDetailsViewModel: ObservableObject {
                 switch result {
                 case .success(let details):
                     self?.tvDetail = details
-                    print(details)
                     
                 case .failure(let error):
                     switch error {

@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class MainCoordinator: Coordinator {
+final class MainCoordinator: Coordinator {
     
     let window: UIWindow
     

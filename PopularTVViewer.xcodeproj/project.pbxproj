@@ -37,6 +37,7 @@
 		8EB318472907591400D80BBD /* PTAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318462907591400D80BBD /* PTAsyncImage.swift */; };
 		8EB318492907880C00D80BBD /* TVProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318482907880C00D80BBD /* TVProtocols.swift */; };
 		8EB3184C29084DBA00D80BBD /* MockedPopularTVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */; };
+		8EB3184E29084EE300D80BBD /* MockedPopularTVDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */; };
 		8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		8EB318462907591400D80BBD /* PTAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTAsyncImage.swift; sourceTree = "<group>"; };
 		8EB318482907880C00D80BBD /* TVProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProtocols.swift; sourceTree = "<group>"; };
 		8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPopularTVManager.swift; sourceTree = "<group>"; };
+		8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPopularTVDetailsManager.swift; sourceTree = "<group>"; };
 		8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */,
+				8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */,
 			);
 			path = MockedManagers;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				8E400F482904ECC700B90686 /* PTSubtitleLabel.swift in Sources */,
 				8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */,
 				8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */,
+				8EB3184E29084EE300D80BBD /* MockedPopularTVDetailsManager.swift in Sources */,
 				8E400F3A29045E7100B90686 /* OnboardingCoordinator.swift in Sources */,
 				8E400F422904BDA200B90686 /* PopularTVDetailsViewModel.swift in Sources */,
 				8E400F3C29045EC700B90686 /* OnboardingView.swift in Sources */,

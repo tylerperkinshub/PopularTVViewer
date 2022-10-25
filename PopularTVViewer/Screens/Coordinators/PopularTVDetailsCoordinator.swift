@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class PopularTVDetailsCoordinator: Coordinator {
+final class PopularTVDetailsCoordinator: Coordinator {
     
     init() {
         
