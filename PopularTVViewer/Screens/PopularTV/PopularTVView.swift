@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PopularTVView: View {
     @StateObject var viewModel = PopularTVViewModel()
-    
     let popularShow: PopularTV
     
     var body: some View {
@@ -22,10 +21,8 @@ struct PopularTVView: View {
                                 .accessibilityLabel("\(show.name) average rating \(show.voteAverage)")
                         }
                     }
-                    
                     EmptyCell()
                         .onAppear {
-#warning("This feels buggy as hell.")
                             viewModel.getMoreShows()
                         }
                 }

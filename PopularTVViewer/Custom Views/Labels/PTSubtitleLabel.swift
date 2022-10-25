@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct PTSubtitleLabel: View {
-        let subtitleLabel: String
+        let label: String
         
         var body: some View {
-            Text(subtitleLabel)
+            Text(label)
                 .font(.system(size: 14, weight: .light, design: .default))
                 .italic()
         }
@@ -19,6 +19,6 @@ struct PTSubtitleLabel: View {
 
 struct PTSubtitleLabel_Previews: PreviewProvider {
     static var previews: some View {
-        PTSubtitleLabel(subtitleLabel: "Fire and blood.")
+        PTSubtitleLabel(label: "Fire and blood.")
     }
 }

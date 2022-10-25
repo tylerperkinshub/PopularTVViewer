@@ -8,20 +8,17 @@
 import SwiftUI
 
 final class PopularTVViewModel: ObservableObject {
-    
     @Published var popularTV = [PopularTV]()
-    
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible())]
-    
     let manager = PopularTVManager()
     var page: Int = 1
     
     func getMoreShows() {
         getShows()
     }
-    
+
     func getShows() {
         manager.getPopularShows(page: page) { [weak self] result in
             switch result {
@@ -45,7 +42,6 @@ final class PopularTVViewModel: ObservableObject {
                 }
             }
         }
-        
         page += 1
     }
 }

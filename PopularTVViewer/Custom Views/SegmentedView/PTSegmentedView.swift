@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct PTSegmentedView: View {
-    
     let tvDetails: PopularTVDetails
-    
     @State private var selection = 0
-    
     
     var body: some View {
 
@@ -24,7 +21,6 @@ struct PTSegmentedView: View {
             }
             .pickerStyle(.segmented)
             .padding([.leading, .trailing], 24)
-            
             
             #warning("the lists need to extracted out")
             if selection == 0 {
@@ -52,8 +48,6 @@ struct PTSegmentedView: View {
                 .listStyle(.plain)
                 .padding([.leading, .trailing], 24)
             }
-        
-            
         }
     }
 }

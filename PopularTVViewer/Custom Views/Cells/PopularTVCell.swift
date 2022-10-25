@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PopularTVCell: View {
-    
     let popularTV: PopularTV
     
     var body: some View {
@@ -22,7 +21,7 @@ struct PopularTVCell: View {
                 
                 HStack {
                     HStack(spacing: 0) {
-                        PTTitleLabel(titleLabel: "\(popularTV.voteAverage)", fontSize: 18)
+                        PTTitleLabel(label: "\(popularTV.voteAverage)", fontSize: 18)
                             .accessibilityHidden(true)
                             .minimumScaleFactor(0.85)
                             .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
@@ -42,7 +41,7 @@ struct PopularTVCell: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding([.leading], 4)
                 
-                PTTitleLabel(titleLabel: popularTV.name, fontSize: 24)
+                PTTitleLabel(label: popularTV.name, fontSize: 24)
                     .accessibilityHidden(true)
                     .frame(width: 118, alignment: .leading)
                     .lineLimit(1)

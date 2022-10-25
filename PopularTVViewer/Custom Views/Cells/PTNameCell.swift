@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PTNameCell: View {
-    
     let name: String
     
     var body: some View {
@@ -16,7 +15,6 @@ struct PTNameCell: View {
             Text(name)
                 .frame(width: 150, height: 16, alignment: .leading)
         }
-            
     }
 }
 

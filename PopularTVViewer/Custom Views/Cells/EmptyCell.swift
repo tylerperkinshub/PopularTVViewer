@@ -13,7 +13,6 @@ struct EmptyCell: View {
             EmptyView()
         }
         .frame(width: 101, height: 200)
-
     }
 }
 

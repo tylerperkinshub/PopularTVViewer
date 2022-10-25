@@ -8,48 +8,35 @@
 import SwiftUI
 
 struct PopularTVDetailsView: View {
-    
     @StateObject private var viewModel = PopularTVDetailsViewModel()
-
     let showId: Int
-
     
     var body: some View {
-        
         VStack {
             HStack {
-                VStack(alignment: .leading, spacing: 4) {
-                    PTTitleLabel(titleLabel: viewModel.tvDetail.name, fontSize: 24)
+                VStack(alignment: .leading) {
+                    PTTitleLabel(label: viewModel.tvDetail.name, fontSize: 18)
                     if viewModel.tvDetail.name != viewModel.tvDetail.originalName {
-
-                         PTSubtitleLabel(subtitleLabel: "aka \(viewModel.tvDetail.originalName)")
+                        PTSubtitleLabel(label: "aka \(viewModel.tvDetail.originalName)")
                     }
-                    PTSubtitleLabel(subtitleLabel: viewModel.tvDetail.tagline)
-                    
+                    PTSubtitleLabel(label: viewModel.tvDetail.tagline)
                     Spacer()
                 }
-                .frame(height: 138)
-                
+                .frame(width: 175, height: 175)
                 Spacer()
-                
-#warning("This should be its own custom view")
-                
-                PosterRemoteImage(urlString: "https://image.tmdb.org/t/p/w154\(viewModel.tvDetail.poster)")
-                    .frame(width: 93, height: 138)
-                    .cornerRadius(8)
-                    .padding([.top], -4)
+                PTAsyncImage(poster: viewModel.tvDetail.poster)
             }
+            .frame(height: 225)
             .padding([.leading, .trailing], 24)
             
-           PTBodyLabel(bodyLabel: viewModel.tvDetail.overview)
-            
+            PTBodyLabel(label: viewModel.tvDetail.overview)
+                .minimumScaleFactor(0.85)
             PTSegmentedView(tvDetails: viewModel.tvDetail)
         }
         .onAppear {
             viewModel.getDetails(userId: showId)
         }
     }
-    
 }
 
 struct PopularTVDetailsView_Previews: PreviewProvider {

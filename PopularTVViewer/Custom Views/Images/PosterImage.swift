@@ -8,7 +8,6 @@
 import SwiftUI
 
 final class PosterImage: ObservableObject {
-    
     @Published var posterImage: Image? = nil
     
     func load(fromURLString urlString: String) {
@@ -23,6 +22,7 @@ final class PosterImage: ObservableObject {
     
 }
 
+
 struct RemoteImage: View {
     var posterImage: Image?
     
@@ -33,7 +33,6 @@ struct RemoteImage: View {
 
 
 struct PosterRemoteImage: View {
-    
     @StateObject var posterImageLoader = PosterImage()
     let urlString: String
     

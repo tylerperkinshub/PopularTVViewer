@@ -9,11 +9,11 @@ import Foundation
 
 
 final class PopularTVDetailsViewModel: ObservableObject {
-    
     #warning("Update for control")
     @Published private(set) var tvDetail = PopularTVDetails()
     
     let managed = PopularTVDetailsManager()
+    let imageManager = PosterImageManager()
     
     func getDetails(userId: Int) {
         managed.getPopularShows(showId: userId) { [weak self] result in
@@ -37,6 +37,15 @@ final class PopularTVDetailsViewModel: ObservableObject {
                     }
                 }
             }
+        }
+    }
+    
+    func getPoster() {
+        imageManager.downloadImage(fromURLString: tvDetail.poster) { image in
+            guard let image = image else { return }
+
+            
+            
         }
     }
     

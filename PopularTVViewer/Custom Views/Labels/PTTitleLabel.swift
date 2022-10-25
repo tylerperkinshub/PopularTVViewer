@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct PTTitleLabel: View {
-    
-    let titleLabel: String
+    let label: String
     let fontSize: CGFloat
     
     var body: some View {
-        Text(titleLabel)
+        Text(label)
             .font(.system(size: fontSize, weight: .medium, design: .default))
             
     }
@@ -21,6 +20,6 @@ struct PTTitleLabel: View {
 
 struct PTTitleLabel_Previews: PreviewProvider {
     static var previews: some View {
-        PTTitleLabel(titleLabel: "House of the Dragon", fontSize: 24)
+        PTTitleLabel(label: "House of the Dragon", fontSize: 24)
     }
 }
