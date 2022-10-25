@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct PopularTVDetails: Codable, Identifiable {
     
     let id = UUID()
@@ -25,16 +26,28 @@ struct PopularTVDetails: Codable, Identifiable {
     struct Genre: Codable, Identifiable {
         let id = UUID()
         var name: String = ""
+        
+        private enum CodingKeys: CodingKey {
+            case name
+        }
     }
 
     struct Networks: Codable, Identifiable {
         let id = UUID()
         var name: String = ""
+        
+        private enum CodingKeys: CodingKey {
+            case name
+        }
     }
 
     struct ProductionCompany: Codable, Identifiable {
         let id = UUID()
         var name: String = ""
+        
+        private enum CodingKeys: CodingKey {
+            case name
+        }
     }
     
     enum CodingKeys: String, CodingKey {

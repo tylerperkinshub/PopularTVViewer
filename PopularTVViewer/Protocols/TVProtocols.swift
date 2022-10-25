@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Needed for dependency injecting for testing. 
 protocol PopularTVManagerProtocol {
     func getPopularShows(completion: @escaping (Result<[PopularTV], NetworkError>) -> Void)
 }

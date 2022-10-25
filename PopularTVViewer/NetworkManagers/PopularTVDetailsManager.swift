@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Calling out to TMDb to get details of a single tv show
 final class PopularTVDetailsManager: PopularTVDetailsManagerProtocol {
     
     func getPopularShowDetails(showId: Int, completion: @escaping (Result<PopularTVDetails, NetworkError>) -> Void) {

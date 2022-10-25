@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// Downloading images and storing it in a cache. 
 final class PosterImageManager {
     static var shared = PosterImageManager()
     private let cache = NSCache<NSString, UIImage>()

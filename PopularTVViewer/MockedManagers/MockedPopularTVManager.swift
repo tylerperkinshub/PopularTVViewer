@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Here to assist with testing and mocking. 
 final class MockedPopularTVManager: PopularTVManagerProtocol {
     
     var result: Result<[PopularTV], NetworkError>!

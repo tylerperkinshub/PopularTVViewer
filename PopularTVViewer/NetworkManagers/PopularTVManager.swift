@@ -7,8 +7,8 @@
 
 import Foundation
 
+// Calling out to TMDb to get popular TV Shows
 final class PopularTVManager: PopularTVManagerProtocol {
-    
     var page: Int = 1
     
     func getPopularShows(completion: @escaping (Result<[PopularTV], NetworkError>) -> Void) {

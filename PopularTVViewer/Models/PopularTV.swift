@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Model object for all PopularTV.
 struct ResultsRoot: Codable {
     var results: [PopularTV] = []
     enum RootKeys: String, CodingKey {
