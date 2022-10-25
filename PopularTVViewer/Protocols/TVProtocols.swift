@@ -8,7 +8,7 @@
 import Foundation
 
 protocol PopularTVManagerProtocol {
-    func getPopularShows(page: Int, completion: @escaping (Result<[PopularTV], NetworkError>) -> Void)
+    func getPopularShows(completion: @escaping (Result<[PopularTV], NetworkError>) -> Void)
 }
 
 protocol PopularTVDetailsManagerProtocol {

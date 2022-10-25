@@ -11,7 +11,7 @@ final class MockedPopularTVManager: PopularTVManagerProtocol {
     
     var result: Result<[PopularTV], NetworkError>!
     
-    func getPopularShows(page: Int, completion: @escaping (Result<[PopularTV], NetworkError>) -> Void) {
+    func getPopularShows(completion: @escaping (Result<[PopularTV], NetworkError>) -> Void) {
         completion(result)
     }
     

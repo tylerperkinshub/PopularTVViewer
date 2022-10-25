@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PopularTVDetailsView: View {
-    @StateObject private var viewModel = PopularTVDetailsViewModel(userID: 0)
+    @StateObject private var viewModel = PopularTVDetailsViewModel(userID: Int())
     let showId: Int
     
     var body: some View {

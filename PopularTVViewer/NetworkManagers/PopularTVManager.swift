@@ -9,7 +9,9 @@ import Foundation
 
 final class PopularTVManager: PopularTVManagerProtocol {
     
-    func getPopularShows(page: Int, completion: @escaping (Result<[PopularTV], NetworkError>) -> Void) {
+    var page: Int = 1
+    
+    func getPopularShows(completion: @escaping (Result<[PopularTV], NetworkError>) -> Void) {
         let popularShowsURL = "https://api.themoviedb.org/3/tv/popular?api_key=f691c008b316b96c5f83eae55b299bcb&language=en-US&page=\(page)"
         guard let url = URL(string: popularShowsURL) else {
             completion(.failure(.invalidURL))
@@ -32,6 +34,7 @@ final class PopularTVManager: PopularTVManagerProtocol {
                 let decoder = JSONDecoder()
                 let decodedResponse = try decoder.decode(ResultsRoot.self, from: data)
                 completion(.success(decodedResponse.results))
+                self.page += 1
                 return
             } catch {
                 completion(.failure(.invalidData))
