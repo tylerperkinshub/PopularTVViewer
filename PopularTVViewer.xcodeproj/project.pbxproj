@@ -26,8 +26,6 @@
 		8E400F3229045C0200B90686 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3129045C0200B90686 /* MainCoordinator.swift */; };
 		8E400F3429045CBE00B90686 /* PopularTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3329045CBE00B90686 /* PopularTVView.swift */; };
 		8E400F3629045DFC00B90686 /* PopularTVDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */; };
-		8E400F3A29045E7100B90686 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */; };
-		8E400F3C29045EC700B90686 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3B29045EC700B90686 /* OnboardingView.swift */; };
 		8E400F3E2904876000B90686 /* PopularTVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3D2904876000B90686 /* PopularTVViewModel.swift */; };
 		8E400F4029048D8C00B90686 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3F29048D8C00B90686 /* EmptyCell.swift */; };
 		8E400F422904BDA200B90686 /* PopularTVDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F412904BDA200B90686 /* PopularTVDetailsViewModel.swift */; };
@@ -74,8 +72,6 @@
 		8E400F3129045C0200B90686 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8E400F3329045CBE00B90686 /* PopularTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVView.swift; sourceTree = "<group>"; };
 		8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsView.swift; sourceTree = "<group>"; };
-		8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
-		8E400F3B29045EC700B90686 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		8E400F3D2904876000B90686 /* PopularTVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewModel.swift; sourceTree = "<group>"; };
 		8E400F3F29048D8C00B90686 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		8E400F412904BDA200B90686 /* PopularTVDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -213,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				8E400F3829045E5300B90686 /* Coordinators */,
-				8E400F3729045E2E00B90686 /* Onboarding */,
 				8E0CDCBE29034BA4000F8D0A /* PopularTV */,
 				8E0CDCBF29034BB0000F8D0A /* PopularTVDetails */,
 			);
@@ -247,18 +242,9 @@
 			path = PopularTVDetails;
 			sourceTree = "<group>";
 		};
-		8E400F3729045E2E00B90686 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				8E400F3B29045EC700B90686 /* OnboardingView.swift */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
 		8E400F3829045E5300B90686 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */,
 				8E400F3129045C0200B90686 /* MainCoordinator.swift */,
 				8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */,
 			);
@@ -408,9 +394,7 @@
 				8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */,
 				8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */,
 				8EB3184E29084EE300D80BBD /* MockedPopularTVDetailsManager.swift in Sources */,
-				8E400F3A29045E7100B90686 /* OnboardingCoordinator.swift in Sources */,
 				8E400F422904BDA200B90686 /* PopularTVDetailsViewModel.swift in Sources */,
-				8E400F3C29045EC700B90686 /* OnboardingView.swift in Sources */,
 				8E400F3429045CBE00B90686 /* PopularTVView.swift in Sources */,
 				8E0CDC7529031C12000F8D0A /* AppDelegate.swift in Sources */,
 				8E400F4029048D8C00B90686 /* EmptyCell.swift in Sources */,
