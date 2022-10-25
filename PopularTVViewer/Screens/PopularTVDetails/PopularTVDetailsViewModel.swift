@@ -18,7 +18,7 @@ final class PopularTVDetailsViewModel: ObservableObject {
     }
     
     func getDetails(userId: Int) {
-        manager.getPopularShows(showId: userId) { [weak self] result in
+        manager.getPopularShowDetails(showId: userId) { [weak self] result in
             DispatchQueue.main.async {
                 
                 switch result {

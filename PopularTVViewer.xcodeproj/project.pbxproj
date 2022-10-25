@@ -12,8 +12,6 @@
 		8E0CDC7E29031C14000F8D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7D29031C14000F8D0A /* Assets.xcassets */; };
 		8E0CDC8129031C14000F8D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CDC7F29031C14000F8D0A /* LaunchScreen.storyboard */; };
 		8E0CDC8C29031C14000F8D0A /* PopularTVViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC8B29031C14000F8D0A /* PopularTVViewerTests.swift */; };
-		8E0CDC9629031C15000F8D0A /* PopularTVViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC9529031C15000F8D0A /* PopularTVViewerUITests.swift */; };
-		8E0CDC9829031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDC9729031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift */; };
 		8E0CDCA62903480F000F8D0A /* PopularTVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCA52903480F000F8D0A /* PopularTVManager.swift */; };
 		8E0CDCA82903482C000F8D0A /* PopularTVDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCA72903482C000F8D0A /* PopularTVDetailsManager.swift */; };
 		8E0CDCAA29034881000F8D0A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CDCA929034881000F8D0A /* NetworkError.swift */; };
@@ -25,7 +23,7 @@
 		8E3C668C290621A400DA034B /* PopularTVDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */; };
 		8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F2D2903992C00B90686 /* PTNameCell.swift */; };
 		8E400F3029045BAD00B90686 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F2F29045BAD00B90686 /* Coordinator.swift */; };
-		8E400F3229045C0200B90686 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */; };
+		8E400F3229045C0200B90686 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3129045C0200B90686 /* MainCoordinator.swift */; };
 		8E400F3429045CBE00B90686 /* PopularTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3329045CBE00B90686 /* PopularTVView.swift */; };
 		8E400F3629045DFC00B90686 /* PopularTVDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */; };
 		8E400F3A29045E7100B90686 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */; };
@@ -38,18 +36,12 @@
 		8E400F4A2904EE7C00B90686 /* PTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F492904EE7C00B90686 /* PTBodyLabel.swift */; };
 		8EB318472907591400D80BBD /* PTAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318462907591400D80BBD /* PTAsyncImage.swift */; };
 		8EB318492907880C00D80BBD /* TVProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318482907880C00D80BBD /* TVProtocols.swift */; };
+		8EB3184C29084DBA00D80BBD /* MockedPopularTVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */; };
 		8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8E0CDC8829031C14000F8D0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8E0CDC6929031C12000F8D0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E0CDC7029031C12000F8D0A;
-			remoteInfo = PopularTVViewer;
-		};
-		8E0CDC9229031C15000F8D0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8E0CDC6929031C12000F8D0A /* Project object */;
 			proxyType = 1;
@@ -67,9 +59,6 @@
 		8E0CDC8229031C14000F8D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0CDC8729031C14000F8D0A /* PopularTVViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularTVViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0CDC8B29031C14000F8D0A /* PopularTVViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewerTests.swift; sourceTree = "<group>"; };
-		8E0CDC9129031C15000F8D0A /* PopularTVViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularTVViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E0CDC9529031C15000F8D0A /* PopularTVViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewerUITests.swift; sourceTree = "<group>"; };
-		8E0CDC9729031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8E0CDCA52903480F000F8D0A /* PopularTVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVManager.swift; sourceTree = "<group>"; };
 		8E0CDCA72903482C000F8D0A /* PopularTVDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsManager.swift; sourceTree = "<group>"; };
 		8E0CDCA929034881000F8D0A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -81,7 +70,7 @@
 		8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsCoordinator.swift; sourceTree = "<group>"; };
 		8E400F2D2903992C00B90686 /* PTNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTNameCell.swift; sourceTree = "<group>"; };
 		8E400F2F29045BAD00B90686 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		8E400F3129045C0200B90686 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8E400F3329045CBE00B90686 /* PopularTVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVView.swift; sourceTree = "<group>"; };
 		8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsView.swift; sourceTree = "<group>"; };
 		8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
@@ -94,6 +83,7 @@
 		8E400F492904EE7C00B90686 /* PTBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTBodyLabel.swift; sourceTree = "<group>"; };
 		8EB318462907591400D80BBD /* PTAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTAsyncImage.swift; sourceTree = "<group>"; };
 		8EB318482907880C00D80BBD /* TVProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProtocols.swift; sourceTree = "<group>"; };
+		8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPopularTVManager.swift; sourceTree = "<group>"; };
 		8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,13 +102,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E0CDC8E29031C15000F8D0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,7 +110,6 @@
 			children = (
 				8E0CDC7329031C12000F8D0A /* PopularTVViewer */,
 				8E0CDC8A29031C14000F8D0A /* PopularTVViewerTests */,
-				8E0CDC9429031C15000F8D0A /* PopularTVViewerUITests */,
 				8E0CDC7229031C12000F8D0A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,7 +119,6 @@
 			children = (
 				8E0CDC7129031C12000F8D0A /* PopularTVViewer.app */,
 				8E0CDC8729031C14000F8D0A /* PopularTVViewerTests.xctest */,
-				8E0CDC9129031C15000F8D0A /* PopularTVViewerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +126,7 @@
 		8E0CDC7329031C12000F8D0A /* PopularTVViewer */ = {
 			isa = PBXGroup;
 			children = (
+				8EB3184A29084D9800D80BBD /* MockedManagers */,
 				8E0CDCA4290347DD000F8D0A /* NetworkManagers */,
 				8E0CDCBB29034AEE000F8D0A /* Protocols */,
 				8E0CDCAB290348D7000F8D0A /* Models */,
@@ -166,15 +148,6 @@
 				8E0CDC8B29031C14000F8D0A /* PopularTVViewerTests.swift */,
 			);
 			path = PopularTVViewerTests;
-			sourceTree = "<group>";
-		};
-		8E0CDC9429031C15000F8D0A /* PopularTVViewerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8E0CDC9529031C15000F8D0A /* PopularTVViewerUITests.swift */,
-				8E0CDC9729031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift */,
-			);
-			path = PopularTVViewerUITests;
 			sourceTree = "<group>";
 		};
 		8E0CDCA4290347DD000F8D0A /* NetworkManagers */ = {
@@ -284,7 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				8E400F3929045E7100B90686 /* OnboardingCoordinator.swift */,
-				8E400F3129045C0200B90686 /* ApplicationCoordinator.swift */,
+				8E400F3129045C0200B90686 /* MainCoordinator.swift */,
 				8E3C668B290621A400DA034B /* PopularTVDetailsCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -306,6 +279,14 @@
 				8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */,
 			);
 			path = SegmentedView;
+			sourceTree = "<group>";
+		};
+		8EB3184A29084D9800D80BBD /* MockedManagers */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */,
+			);
+			path = MockedManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,24 +327,6 @@
 			productReference = 8E0CDC8729031C14000F8D0A /* PopularTVViewerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8E0CDC9029031C15000F8D0A /* PopularTVViewerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8E0CDCA129031C15000F8D0A /* Build configuration list for PBXNativeTarget "PopularTVViewerUITests" */;
-			buildPhases = (
-				8E0CDC8D29031C15000F8D0A /* Sources */,
-				8E0CDC8E29031C15000F8D0A /* Frameworks */,
-				8E0CDC8F29031C15000F8D0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8E0CDC9329031C15000F8D0A /* PBXTargetDependency */,
-			);
-			name = PopularTVViewerUITests;
-			productName = PopularTVViewerUITests;
-			productReference = 8E0CDC9129031C15000F8D0A /* PopularTVViewerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -378,10 +341,6 @@
 						CreatedOnToolsVersion = 13.3.1;
 					};
 					8E0CDC8629031C14000F8D0A = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = 8E0CDC7029031C12000F8D0A;
-					};
-					8E0CDC9029031C15000F8D0A = {
 						CreatedOnToolsVersion = 13.3.1;
 						TestTargetID = 8E0CDC7029031C12000F8D0A;
 					};
@@ -402,7 +361,6 @@
 			targets = (
 				8E0CDC7029031C12000F8D0A /* PopularTVViewer */,
 				8E0CDC8629031C14000F8D0A /* PopularTVViewerTests */,
-				8E0CDC9029031C15000F8D0A /* PopularTVViewerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -418,13 +376,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8E0CDC8529031C14000F8D0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E0CDC8F29031C15000F8D0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,6 +399,7 @@
 				8E400F3629045DFC00B90686 /* PopularTVDetailsView.swift in Sources */,
 				8E0CDCB2290349B1000F8D0A /* PopularTVCell.swift in Sources */,
 				8E0CDCB529034A26000F8D0A /* PosterImage.swift in Sources */,
+				8EB3184C29084DBA00D80BBD /* MockedPopularTVManager.swift in Sources */,
 				8E400F462904ECAB00B90686 /* PTTitleLabel.swift in Sources */,
 				8E400F482904ECC700B90686 /* PTSubtitleLabel.swift in Sources */,
 				8E400F2E2903992C00B90686 /* PTNameCell.swift in Sources */,
@@ -463,7 +415,7 @@
 				8E0CDCB929034A93000F8D0A /* PopularTVDetails.swift in Sources */,
 				8E3C668C290621A400DA034B /* PopularTVDetailsCoordinator.swift in Sources */,
 				8E400F4A2904EE7C00B90686 /* PTBodyLabel.swift in Sources */,
-				8E400F3229045C0200B90686 /* ApplicationCoordinator.swift in Sources */,
+				8E400F3229045C0200B90686 /* MainCoordinator.swift in Sources */,
 				8EB318492907880C00D80BBD /* TVProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,15 +428,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E0CDC8D29031C15000F8D0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E0CDC9829031C15000F8D0A /* PopularTVViewerUITestsLaunchTests.swift in Sources */,
-				8E0CDC9629031C15000F8D0A /* PopularTVViewerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -492,11 +435,6 @@
 			isa = PBXTargetDependency;
 			target = 8E0CDC7029031C12000F8D0A /* PopularTVViewer */;
 			targetProxy = 8E0CDC8829031C14000F8D0A /* PBXContainerItemProxy */;
-		};
-		8E0CDC9329031C15000F8D0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8E0CDC7029031C12000F8D0A /* PopularTVViewer */;
-			targetProxy = 8E0CDC9229031C15000F8D0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -722,42 +660,6 @@
 			};
 			name = Release;
 		};
-		8E0CDCA229031C15000F8D0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6DMEA6Z5ZU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.typerdev.PopularTVViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PopularTVViewer;
-			};
-			name = Debug;
-		};
-		8E0CDCA329031C15000F8D0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6DMEA6Z5ZU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.typerdev.PopularTVViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PopularTVViewer;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -784,15 +686,6 @@
 			buildConfigurations = (
 				8E0CDC9F29031C15000F8D0A /* Debug */,
 				8E0CDCA029031C15000F8D0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8E0CDCA129031C15000F8D0A /* Build configuration list for PBXNativeTarget "PopularTVViewerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E0CDCA229031C15000F8D0A /* Debug */,
-				8E0CDCA329031C15000F8D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

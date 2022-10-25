@@ -1,5 +1,5 @@
 //
-//  ApplicationCoordinator.swift
+//  MainCoordinator.swift
 //  PopularTVViewer
 //
 //  Created by Tyler Perkins on 10/22/22.
@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class ApplicationCoordinator: Coordinator {
+class MainCoordinator: Coordinator {
     
     let window: UIWindow
     

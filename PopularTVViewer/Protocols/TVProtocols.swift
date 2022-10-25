@@ -12,6 +12,6 @@ protocol PopularTVManagerProtocol {
 }
 
 protocol PopularTVDetailsManagerProtocol {
-    func getPopularShows(showId: Int, completion: @escaping (Result<PopularTVDetails, NetworkError>) -> Void)
+    func getPopularShowDetails(showId: Int, completion: @escaping (Result<PopularTVDetails, NetworkError>) -> Void)
 }
 
