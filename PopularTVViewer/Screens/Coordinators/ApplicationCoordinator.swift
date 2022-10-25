@@ -18,10 +18,5 @@ class ApplicationCoordinator: Coordinator {
     
     func start() {
         window.rootViewController = UIHostingController(rootView: PopularTVView(popularShow: PopularTV()))
-
     }
-    
-    
-    
-    
 }

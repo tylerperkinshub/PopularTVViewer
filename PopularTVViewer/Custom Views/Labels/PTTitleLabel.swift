@@ -14,6 +14,7 @@ struct PTTitleLabel: View {
     var body: some View {
         Text(label)
             .font(.system(size: fontSize, weight: .medium, design: .default))
+            .frame(alignment: .leading)
             
     }
 }

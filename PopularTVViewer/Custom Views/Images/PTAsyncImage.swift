@@ -14,11 +14,11 @@ struct PTAsyncImage: View {
         AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w154\(poster)")) { image in
             image
         } placeholder: {
-            #warning("need placeholder")
+            ProgressView()
+                .foregroundColor(Color("USPrimary"))
         }
         .frame(width: 116, height: 200)
         .cornerRadius(8)
-        .padding([.top], -4)
     }
 }
 

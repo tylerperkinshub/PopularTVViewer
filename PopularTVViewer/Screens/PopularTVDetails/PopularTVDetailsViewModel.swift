@@ -11,12 +11,12 @@ import Foundation
 final class PopularTVDetailsViewModel: ObservableObject {
     #warning("Update for control")
     @Published private(set) var tvDetail = PopularTVDetails()
+    let manager = PopularTVDetailsManager()
     
-    let managed = PopularTVDetailsManager()
-    let imageManager = PosterImageManager()
+
     
     func getDetails(userId: Int) {
-        managed.getPopularShows(showId: userId) { [weak self] result in
+        manager.getPopularShows(showId: userId) { [weak self] result in
             DispatchQueue.main.async {
                 
                 switch result {
@@ -39,16 +39,6 @@ final class PopularTVDetailsViewModel: ObservableObject {
             }
         }
     }
-    
-    func getPoster() {
-        imageManager.downloadImage(fromURLString: tvDetail.poster) { image in
-            guard let image = image else { return }
-
-            
-            
-        }
-    }
-    
 }
 
 

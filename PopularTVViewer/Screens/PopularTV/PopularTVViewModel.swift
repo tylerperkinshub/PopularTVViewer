@@ -9,11 +9,15 @@ import SwiftUI
 
 final class PopularTVViewModel: ObservableObject {
     @Published var popularTV = [PopularTV]()
-    let columns: [GridItem] = [GridItem(.flexible()),
-                               GridItem(.flexible()),
-                               GridItem(.flexible())]
-    let manager = PopularTVManager()
+    let manager: PopularTVManagerProtocol
     var page: Int = 1
+    
+    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+        
+    init(manager: PopularTVManagerProtocol = PopularTVManager()) {
+        self.manager = manager
+        getShows()
+    }
     
     func getMoreShows() {
         getShows()
@@ -28,7 +32,6 @@ final class PopularTVViewModel: ObservableObject {
                         self?.popularTV.append(show)
                     }
                 }
-                
             case .failure(let error):
                 switch error {
                 case .invalidURL:
@@ -45,6 +48,7 @@ final class PopularTVViewModel: ObservableObject {
         page += 1
     }
 }
+
 
 
 

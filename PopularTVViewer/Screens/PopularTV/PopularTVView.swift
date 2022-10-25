@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct PopularTVView: View {
-    @StateObject var viewModel = PopularTVViewModel()
+    let manager = PopularTVManager()
     let popularShow: PopularTV
+    @StateObject var viewModel = PopularTVViewModel()
     
     var body: some View {
         NavigationView {

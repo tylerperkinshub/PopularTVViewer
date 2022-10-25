@@ -37,6 +37,7 @@
 		8E400F482904ECC700B90686 /* PTSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F472904ECC700B90686 /* PTSubtitleLabel.swift */; };
 		8E400F4A2904EE7C00B90686 /* PTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E400F492904EE7C00B90686 /* PTBodyLabel.swift */; };
 		8EB318472907591400D80BBD /* PTAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318462907591400D80BBD /* PTAsyncImage.swift */; };
+		8EB318492907880C00D80BBD /* TVProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318482907880C00D80BBD /* TVProtocols.swift */; };
 		8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		8E400F472904ECC700B90686 /* PTSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSubtitleLabel.swift; sourceTree = "<group>"; };
 		8E400F492904EE7C00B90686 /* PTBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTBodyLabel.swift; sourceTree = "<group>"; };
 		8EB318462907591400D80BBD /* PTAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTAsyncImage.swift; sourceTree = "<group>"; };
+		8EB318482907880C00D80BBD /* TVProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProtocols.swift; sourceTree = "<group>"; };
 		8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,8 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				8E0CDCA4290347DD000F8D0A /* NetworkManagers */,
-				8E0CDCAB290348D7000F8D0A /* Models */,
 				8E0CDCBB29034AEE000F8D0A /* Protocols */,
+				8E0CDCAB290348D7000F8D0A /* Models */,
 				8E0CDCBA29034ABF000F8D0A /* Screens */,
 				8E0CDCAF29034990000F8D0A /* Custom Views */,
 				8E0CDC7429031C12000F8D0A /* AppDelegate.swift */,
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				8E400F2F29045BAD00B90686 /* Coordinator.swift */,
+				8EB318482907880C00D80BBD /* TVProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -254,8 +257,8 @@
 		8E0CDCBE29034BA4000F8D0A /* PopularTV */ = {
 			isa = PBXGroup;
 			children = (
-				8E400F3329045CBE00B90686 /* PopularTVView.swift */,
 				8E400F3D2904876000B90686 /* PopularTVViewModel.swift */,
+				8E400F3329045CBE00B90686 /* PopularTVView.swift */,
 			);
 			path = PopularTV;
 			sourceTree = "<group>";
@@ -263,8 +266,8 @@
 		8E0CDCBF29034BB0000F8D0A /* PopularTVDetails */ = {
 			isa = PBXGroup;
 			children = (
-				8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */,
 				8E400F412904BDA200B90686 /* PopularTVDetailsViewModel.swift */,
+				8E400F3529045DFC00B90686 /* PopularTVDetailsView.swift */,
 			);
 			path = PopularTVDetails;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				8E3C668C290621A400DA034B /* PopularTVDetailsCoordinator.swift in Sources */,
 				8E400F4A2904EE7C00B90686 /* PTBodyLabel.swift in Sources */,
 				8E400F3229045C0200B90686 /* ApplicationCoordinator.swift in Sources */,
+				8EB318492907880C00D80BBD /* TVProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
