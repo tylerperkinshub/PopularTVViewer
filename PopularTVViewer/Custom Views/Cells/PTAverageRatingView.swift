@@ -13,9 +13,9 @@ struct PTAverageRatingView: View {
     var body: some View {
         HStack(spacing: 0) {
             PTTitleLabel(label: "\(popularTV.voteAverage)", fontSize: 18)
-                .accessibilityHidden(true)
                 .minimumScaleFactor(0.85)
                 .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
+                .accessibilityHidden(true)
                  
             Text(" \(Image(systemName: "star.fill"))")
                 .font(.system(size: 14, weight: .regular))
@@ -28,7 +28,8 @@ struct PTAverageRatingView: View {
         .background(Color("USPrimary"))
         .foregroundColor(Color("USBlack"))
         .cornerRadius(4)
-        .shadow(color: Color("USShadow"), radius: 5, x:1, y: 1)    }
+        .shadow(color: Color("USShadow"), radius: 5, x:1, y: 1)
+    }
 }
 
 struct PTAverageRatingView_Previews: PreviewProvider {

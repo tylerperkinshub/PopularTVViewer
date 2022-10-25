@@ -24,6 +24,6 @@ struct PTAsyncImage: View {
 
 struct PTAsyncImage_Previews: PreviewProvider {
     static var previews: some View {
-        PTAsyncImage(poster: PopularTVDetails.mockPopularTVDetails.poster)
+        PTAsyncImage(poster: PopularTVDetails.mockedTVDetails.poster)
     }
 }

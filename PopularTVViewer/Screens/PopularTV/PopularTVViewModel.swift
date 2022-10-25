@@ -15,7 +15,6 @@ final class PopularTVViewModel: ObservableObject {
     // Injecting for testing.
     init(manager: PopularTVManagerProtocol = PopularTVManager()) {
         self.manager = manager
-        getShows()
     }
     
     // Grabbing next page of results

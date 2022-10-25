@@ -37,6 +37,8 @@
 		8EB3184E29084EE300D80BBD /* MockedPopularTVDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */; };
 		8EB318512908555300D80BBD /* ColumnLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318502908555300D80BBD /* ColumnLayoutHelper.swift */; };
 		8EB318532908656400D80BBD /* PTAverageRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318522908656400D80BBD /* PTAverageRatingView.swift */; };
+		8EB3185729087BCF00D80BBD /* CustomViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3185629087BCF00D80BBD /* CustomViewsTests.swift */; };
+		8EB3185929087BE800D80BBD /* PopularTVDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3185829087BE800D80BBD /* PopularTVDetailsTests.swift */; };
 		8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPopularTVDetailsManager.swift; sourceTree = "<group>"; };
 		8EB318502908555300D80BBD /* ColumnLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnLayoutHelper.swift; sourceTree = "<group>"; };
 		8EB318522908656400D80BBD /* PTAverageRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTAverageRatingView.swift; sourceTree = "<group>"; };
+		8EB3185629087BCF00D80BBD /* CustomViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewsTests.swift; sourceTree = "<group>"; };
+		8EB3185829087BE800D80BBD /* PopularTVDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTVDetailsTests.swift; sourceTree = "<group>"; };
 		8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				8E0CDC8B29031C14000F8D0A /* PopularTVViewerTests.swift */,
+				8EB3185829087BE800D80BBD /* PopularTVDetailsTests.swift */,
+				8EB3185629087BCF00D80BBD /* CustomViewsTests.swift */,
 			);
 			path = PopularTVViewerTests;
 			sourceTree = "<group>";
@@ -417,6 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0CDC8C29031C14000F8D0A /* PopularTVViewerTests.swift in Sources */,
+				8EB3185929087BE800D80BBD /* PopularTVDetailsTests.swift in Sources */,
+				8EB3185729087BCF00D80BBD /* CustomViewsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

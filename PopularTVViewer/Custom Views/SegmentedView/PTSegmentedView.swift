@@ -55,7 +55,7 @@ struct PTSegmentedView: View {
 
 struct PTSegmentedView_Previews: PreviewProvider {
     static var previews: some View {
-        PTSegmentedView(tvDetails: PopularTVDetails.mockPopularTVDetails)
+        PTSegmentedView(tvDetails: PopularTVDetails.mockedTVDetails)
     }
 }
 
