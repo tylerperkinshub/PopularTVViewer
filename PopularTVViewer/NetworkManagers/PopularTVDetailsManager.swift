@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PopularTVDetailsManager {
+class PopularTVDetailsManager: PopularTVDetailsManagerProtocol {
     static let shared = PopularTVDetailsManager()
     
     func getPopularShows(showId: Int, completion: @escaping (Result<PopularTVDetails, NetworkError>) -> Void) {

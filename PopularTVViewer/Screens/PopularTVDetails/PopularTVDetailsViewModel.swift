@@ -11,9 +11,11 @@ import Foundation
 final class PopularTVDetailsViewModel: ObservableObject {
     #warning("Update for control")
     @Published private(set) var tvDetail = PopularTVDetails()
-    let manager = PopularTVDetailsManager()
+    let manager: PopularTVDetailsManagerProtocol
     
-
+    init(manager: PopularTVDetailsManagerProtocol = PopularTVDetailsManager(), userID: Int) {
+        self.manager = manager
+    }
     
     func getDetails(userId: Int) {
         manager.getPopularShows(showId: userId) { [weak self] result in
