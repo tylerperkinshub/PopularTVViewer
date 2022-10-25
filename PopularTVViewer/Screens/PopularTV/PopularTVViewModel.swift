@@ -12,7 +12,7 @@ final class PopularTVViewModel: ObservableObject {
     let manager: PopularTVManagerProtocol
 
     
-    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    let columns = ColumnLayoutHelper.threeColumnLayout
         
     init(manager: PopularTVManagerProtocol = PopularTVManager()) {
         self.manager = manager

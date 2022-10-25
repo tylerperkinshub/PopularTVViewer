@@ -36,6 +36,7 @@
 		8EB318492907880C00D80BBD /* TVProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318482907880C00D80BBD /* TVProtocols.swift */; };
 		8EB3184C29084DBA00D80BBD /* MockedPopularTVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */; };
 		8EB3184E29084EE300D80BBD /* MockedPopularTVDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */; };
+		8EB318512908555300D80BBD /* ColumnLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB318502908555300D80BBD /* ColumnLayoutHelper.swift */; };
 		8EBAEE552903944E00CD6A03 /* PTSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		8EB318482907880C00D80BBD /* TVProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProtocols.swift; sourceTree = "<group>"; };
 		8EB3184B29084DBA00D80BBD /* MockedPopularTVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPopularTVManager.swift; sourceTree = "<group>"; };
 		8EB3184D29084EE300D80BBD /* MockedPopularTVDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPopularTVDetailsManager.swift; sourceTree = "<group>"; };
+		8EB318502908555300D80BBD /* ColumnLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnLayoutHelper.swift; sourceTree = "<group>"; };
 		8EBAEE542903944E00CD6A03 /* PTSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTSegmentedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				8E0CDCA929034881000F8D0A /* NetworkError.swift */,
+				8EB318502908555300D80BBD /* ColumnLayoutHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				8E400F3029045BAD00B90686 /* Coordinator.swift in Sources */,
 				8E0CDCA62903480F000F8D0A /* PopularTVManager.swift in Sources */,
 				8E0CDCA82903482C000F8D0A /* PopularTVDetailsManager.swift in Sources */,
+				8EB318512908555300D80BBD /* ColumnLayoutHelper.swift in Sources */,
 				8E400F3629045DFC00B90686 /* PopularTVDetailsView.swift in Sources */,
 				8E0CDCB2290349B1000F8D0A /* PopularTVCell.swift in Sources */,
 				8E0CDCB529034A26000F8D0A /* PosterImage.swift in Sources */,
