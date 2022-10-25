@@ -17,6 +17,7 @@ final class PopularTVManager: PopularTVManagerProtocol {
             completion(.failure(.invalidURL))
             return
         }
+        
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             if let _  = error {
                 completion(.failure(.unableToComplete))
@@ -30,6 +31,7 @@ final class PopularTVManager: PopularTVManagerProtocol {
                 completion(.failure(.invalidData))
                 return
             }
+            
             do {
                 let decoder = JSONDecoder()
                 let decodedResponse = try decoder.decode(ResultsRoot.self, from: data)

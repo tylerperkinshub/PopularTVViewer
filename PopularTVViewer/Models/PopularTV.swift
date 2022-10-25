@@ -33,6 +33,7 @@ struct PopularTV: Codable, Identifiable {
         case voteCount = "vote_count"
     }
     
+    // Here for previews
     static let mockPopularShow = PopularTV(name: "House of the Dragon", posterPath: "/mYLOqiStMxDK3fYZFirgrMt8z5d.jpg", popularity: 4987.163, voteAverage: 7.7, voteCount: 881)
     
     static let mockPopularShows = [

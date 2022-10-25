@@ -16,12 +16,10 @@ struct PTAverageRatingView: View {
                 .minimumScaleFactor(0.85)
                 .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 0))
                 .accessibilityHidden(true)
-                 
             Text(" \(Image(systemName: "star.fill"))")
                 .font(.system(size: 14, weight: .regular))
                 .padding([.bottom], 2)
                 .accessibilityHidden(true)
-            
         }
         .frame(width: 60, height: 25)
         .padding([.trailing], 4)

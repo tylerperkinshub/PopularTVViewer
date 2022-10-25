@@ -19,7 +19,6 @@ final class PTPosterImage: ObservableObject {
             }
         }
     }
-    
 }
 
 

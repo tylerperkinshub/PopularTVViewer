@@ -13,19 +13,16 @@ struct PTPopularTVCell: View {
     
     var body: some View {
         HStack(spacing: 12) {
-            
             VStack {
                 PTPosterRemoteImage(urlString: "https://image.tmdb.org/t/p/w154\(popularTV.posterPath)")
                     .frame(width: 116, height: 175)
                     .cornerRadius(cornerRadius)
                     .padding([.top], -4)
-                
                 HStack {
                     PTAverageRatingView(popularTV: popularTV)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding([.leading], 4)
-                
                 PTTitleLabel(label: popularTV.name, fontSize: 24)
                     .accessibilityHidden(true)
                     .frame(width: 118, alignment: .leading)

@@ -40,5 +40,4 @@ final class MockedPopularTVDetailsManager: PopularTVDetailsManagerProtocol {
                                                 PopularTVDetails.ProductionCompany(name: "1:26 Pictures"),
                                                 PopularTVDetails.ProductionCompany(name: "GRRM")
                                             ])
-    
 }

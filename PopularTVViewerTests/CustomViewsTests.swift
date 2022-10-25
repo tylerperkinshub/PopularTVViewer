@@ -9,7 +9,6 @@ import XCTest
 @testable import PopularTVViewer
 
 class CustomViewsTests: XCTestCase {
-    
     private var popularTV: MockedPopularTVManager!
     private var tvDetail: MockedPopularTVDetailsManager!
     
@@ -19,9 +18,6 @@ class CustomViewsTests: XCTestCase {
         popularTV = MockedPopularTVManager()
         tvDetail = MockedPopularTVDetailsManager()
     }
-    
-
-    
 
     func testPTTitleLabel() {
         let titleLabel = PTTitleLabel(label: tvDetail.mockedTVDetails.name, fontSize: 16)
@@ -37,7 +33,6 @@ class CustomViewsTests: XCTestCase {
         XCTAssertNotNil(tvDetail)
         XCTAssertNotNil(subtitleLabel)
         XCTAssertEqual(subtitleLabel.label, "Fire and blood.")
-        
     }
     
     func testPTBodyLabel() {
@@ -60,5 +55,4 @@ class CustomViewsTests: XCTestCase {
         
         XCTAssertNotNil(emptyCell)
     }
-
 }

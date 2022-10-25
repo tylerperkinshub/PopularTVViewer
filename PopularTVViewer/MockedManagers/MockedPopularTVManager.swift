@@ -14,7 +14,6 @@ class MockedPopularTVManager: PopularTVManagerProtocol {
     var getPopularShowsCallCounter = 0
 
     func getPopularShows(completion: @escaping (Result<[PopularTV], NetworkError>) -> Void) {
-        
         completion(result)
        getPopularShowsCallCounter += 1
 

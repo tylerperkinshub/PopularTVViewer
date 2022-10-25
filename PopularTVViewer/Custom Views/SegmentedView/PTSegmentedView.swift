@@ -13,7 +13,6 @@ struct PTSegmentedView: View {
     @State private var selection = 0
     
     var body: some View {
-
         VStack {
             // Segmented picker with 3 selections
             Picker("", selection: $selection) {

@@ -28,6 +28,7 @@ final class PosterImageManager {
                 complete(nil)
                 return
             }
+            
             self.cache.setObject(image, forKey: cacheKey)
             complete(image)
         }
